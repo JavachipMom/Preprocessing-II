@@ -9,12 +9,23 @@
 		justify-content: space-between;
 		padding: 2% 8%;
 
+		@media @mobile{
+		.mobile-format();
+		h1 {
+			font-size: 3rem;
+			}
+		}
+
 		div {
 			display: flex;
-			width: 50%;
+			width: 57%;
 			justify-content: space-between;
 			align-items: center;
 			padding: 1% 5%;
+
+			@media @mobile{
+				width: 100%;
+			}
 
 
 			a {
@@ -25,13 +36,5 @@
 
 			}
 		}
-	}
-}
-
-.welcome {
-
-	article {
-		border-bottom: 2px dashed @silver;
-		padding: 2% 0;
 	}
 }
