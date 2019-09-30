@@ -168,6 +168,31 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.header {
+  border-bottom: 2px dashed #C0C0C0;
+  width: 100%;
+}
+.header .nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 8%;
+}
+.header .nav-bar div {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 5%;
+}
+.header .nav-bar div a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 16px;
+}
+.welcome article {
+  border-bottom: 2px dashed #C0C0C0;
+  padding: 2% 0;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -225,6 +250,16 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
-.html {
-  background-color: red;
+.home .content-pick .btn {
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  font-size: 20px;
+  width: 75%;
+  border-radius: 15px;
+  height: 4rem;
+  box-shadow: 0;
+  cursor: pointer;
+}
+.home .content-pick .btn:hover {
+  background-color: #006667;
 }

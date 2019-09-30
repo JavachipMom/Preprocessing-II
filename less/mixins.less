@@ -1,1 +1,28 @@
 // Mixins in here
+
+.center () {
+    display: flex;
+    justify-content: center;
+}
+
+.color (@bgcolor, @fontcolor) {
+    background-color: @bgcolor;
+    color: @fontcolor;
+}
+
+.btn-design (@bgcolor, @fontcolor) {
+    background-color: @bgcolor;
+    color: @fontcolor;
+    font-size: 20px;
+    width: 75%;
+    border-radius: 15px;
+    height: 4rem;
+    box-shadow: 0;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(teal, 5%);
+    }
+
+
+}
