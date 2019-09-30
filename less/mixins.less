@@ -1,1 +1,36 @@
 // Mixins in here
+
+.center () {
+    display: flex;
+    justify-content: center;
+}
+
+.color (@bgcolor, @fontcolor) {
+    background-color: @bgcolor;
+    color: @fontcolor;
+}
+
+.btn-design (@bgcolor, @fontcolor) {
+    background-color: @bgcolor;
+    color: @fontcolor;
+    font-size: 20px;
+    width: 80%;
+    border-radius: 15px;
+    height: 4rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(teal, 5%);
+    }
+
+
+}
+
+.mobile-format(@mobilewidth: 100%) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: @mobilewidth;
+}
